@@ -57,7 +57,7 @@ class Song
     song
   end
 
-  def create_from_filename(name)
+  def self.create_from_filename(name)
     song = self.new
     name = name.split('.')[0].split(' - ')
     song.name = name[1]
